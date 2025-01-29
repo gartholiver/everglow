@@ -1,0 +1,45 @@
+@layer components {
+  .button {
+    @apply w-fit rounded-full;
+
+    &:has(.shadow-primary-dark) {
+      @apply bg-teal-950;
+    }
+
+    &:has(.shadow-primary-light) {
+      @apply bg-teal-200;
+    }
+
+    &:has(.shadow-secondary-light) {
+      @apply bg-stone-300;
+    }
+
+    a, button {
+      @apply flex items-center rounded-full px-6 relative overflow-hidden;
+      @apply transform transition duration-300 py-2 sm:px-10 sm:py-3;
+      @apply hover:-translate-y-1;
+    }
+
+    .is-primary {
+      &.is-dark {
+        @apply text-white bg-teal-900;
+      }
+
+      &.is-light {
+        @apply text-teal-900 bg-white;
+      }
+    }
+
+    .is-secondary {
+      &.is-dark {
+        @apply text-white bg-stone-600;
+      }
+
+      &.is-light {
+        @apply text-stone-600 bg-white;
+      }
+    }
+  }
+}
+
+@tailwind components;

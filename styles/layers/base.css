@@ -1,0 +1,12 @@
+@layer base {
+  body {
+    @apply min-w-80;
+  }
+
+  h1 {
+    @apply text-[clamp(2.5rem,8vw,3.5rem)];
+    @apply leading-tight;
+  }
+}
+
+@tailwind base;
