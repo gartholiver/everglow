@@ -1,3 +1,7 @@
+/**
+ * Components Layer Customizations
+ */
+
 @layer components {
   .button {
     @apply w-fit rounded-full;
