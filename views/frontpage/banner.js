@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../../components/";
+import { Button, DialogButton } from "../../components/";
 import { ChatBubbleOvalLeftEllipsisIcon, CalendarDaysIcon } from "@heroicons/react/24/solid";
 
 function imageOne(node) {
@@ -37,42 +37,34 @@ export default function Banner({ banner }) {
 
       <div className="container flex flex-col items-center justify-center gap-20 text-white md:gap-12 xl:gap-24 md:flex-row">
         <div className="flex flex-col order-2 max-w-md gap-6 md:order-1">
-          {banner?.heading && (
-            <h1
-              className="text-5xl font-semibold tracking-tight text-teal-100 text-balance sm:text-6xl"
-              dangerouslySetInnerHTML={{ __html: banner?.heading }}
-            ></h1>
-          )}
+          <h1 className="font-semibold tracking-tight text-teal-100 text-3xl/tight sm:text-3xl/tight lg:text-5xl/tight text-balance">
+            Radiate&nbsp;Confidence,
+            <br/>Glow&nbsp;Effortlessly
+          </h1>
 
-          {banner?.subheading && (
-            <div dangerouslySetInnerHTML={{ __html: banner?.subheading }}></div>
-          )}
+          <p className="text-base/7 sm:text-lg/8">Step into a world of rejuvenation where expert care meets tranquility—because glowing skin starts with self-care.</p>
 
-          {(banner?.buttonOne || banner?.buttonTwo) && (
-            <div className="flex flex-wrap items-center gap-4 mt-2">
-              {banner?.buttonOne && (
-                <Button
-                  data={banner.buttonOne}
-                  isLink={true}
-                  className="is-secondary is-dark shadow-primary-dark"
-                >
-                  {banner.buttonOne.title}
-                  <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-auto"/>
-                </Button>
-              )}
+          <div className="flex flex-wrap items-center gap-5 mt-4">
+            <DialogButton
+              frame="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mwTFsb/I3ZVXnQPPmFxQTbfr9lKuZXXMeRd46L4eTxgKOwdaOWogwes7t2kXT9ybXf5BgMxro1JPKUyMsrO3i024aGa1obS4fyL++k1QqKbgk5mwG/r0fhV41zE1FinChL5BKjxCgor4XgveVvJTQqG+FoaPTugy+RTe7kwhRtw0cY7agP75skihVVg/CPYW11xDc+pOqUSTOiZjEiG8HBHL07OMOzGGoAPyxEcZ/AiRjbZ00uF9hg1CrLOJ9Gacl48uFIg/LcV9oj8C38rP9SVVAiGwVnF8PpC+zZtMMIju2btLwsQ2lQGUQ8cJOQXu5OurD1qfzBQuq9QvBUrKnOQu3nnF3p4mbWpHUKqjMjnWqxd38tnoJwRXOGB/3Pcs6h+OchetGKdnmgGSTQMBuLRQ=="
+              className="is-secondary is-dark shadow-primary-dark"
+            >
+              Book Now
+              <CalendarDaysIcon className="w-5 h-auto" />
+            </DialogButton>
 
-              {banner?.buttonTwo && (
-                <Button
-                  data={banner.buttonTwo}
-                  isLink={true}
-                  className="is-primary is-light shadow-primary-light"
-                >
-                  {banner.buttonTwo.title}
-                  <CalendarDaysIcon className="w-5 h-auto" />
-                </Button>
-              )}
+            <div className="flex items-center gap-2">
+              Call or Text
+
+              <a
+                href="tel:2489295656"
+                target="_blank"
+                className="italic underline transition-all duration-200 underline-offset-8 decoration-teal-50 hover:decoration-teal-200"
+              >
+                (248) 929-5656
+              </a>
             </div>
-          )}
+          </div>
         </div>
 
         <div className="relative order-1 w-full max-w-md md:min-w-96 aspect-square md:order-2">

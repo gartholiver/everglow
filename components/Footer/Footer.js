@@ -1,11 +1,11 @@
+import { nanoid } from "nanoid";
+import { Link } from "react-scroll";
+
 const navigation = {
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Accessibility', href: '#' },
-    { name: 'Partners', href: '#' },
+    { label: 'Services', to: 'services' },
+    { label: 'About', to: 'about' },
+    { label: 'Reviews', to: 'reviews' }
   ],
   social: [
     {
@@ -80,9 +80,15 @@ export default function Footer({ title, menuItems }) {
       <div className="px-6 py-20 mx-auto overflow-hidden max-w-7xl sm:py-24 lg:px-8">
         <nav aria-label="Footer" className="flex flex-wrap justify-center -mb-6 gap-x-12 gap-y-3 text-sm/6">
           {navigation.main.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-600 hover:text-gray-900">
-              {item.name}
-            </a>
+            <Link
+              to={item.to}
+              smooth={true}
+              duration={500}
+              key={nanoid()}
+              className="text-gray-600 cursor-pointer hover:text-gray-900"
+            >
+              {item.label}
+            </Link>
           ))}
         </nav>
         <div className="flex justify-center mt-16 gap-x-10">

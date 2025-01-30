@@ -23,8 +23,8 @@ export default function DialogButton({ children, frame, ...props }) {
         </span>
       </Button>
 
-      <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
-        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+      <Dialog open={isOpen} as="div" className="relative z-50 focus:outline-none" onClose={close}>
+        <div className="fixed inset-0 z-10 w-screen overflow-y-auto bg-teal-900/50">
           <div className="flex items-center justify-center min-h-full p-4">
             <DialogPanel
               transition

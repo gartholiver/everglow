@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Button } from '../../components';
 import { nanoid } from 'nanoid';
+import { Element } from 'react-scroll';
 
 const samples = [
   {
@@ -87,7 +88,7 @@ function Testimonial({ data }) {
 
 export default function Reviews() {
   return (
-    <section className="relative py-24 border-t-8 bg-teal-50 border-x-8 border-teal-50">
+    <Element id="reviews" className="relative py-24 border-t-8 bg-teal-50 border-x-8 border-teal-50">
       <div className='absolute bottom-0 left-0 z-0 w-full h-64 bg-teal-900 md:h-72'></div>
 
       <div className='container relative z-10'>
@@ -151,6 +152,6 @@ export default function Reviews() {
           <ChevronRightIcon className='w-6 h-auto text-white' />
         </button>
       </div>
-    </section>
+    </Element>
   );
 }

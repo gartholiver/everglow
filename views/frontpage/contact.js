@@ -3,7 +3,7 @@ import { Button } from "../../components";
 
 export default function Contact() {
   return (
-    <div className="relative overflow-hidden border-b-8 bg-gradient-to-t from-teal-700 via-teal-800 to-teal-900 border-x-8 border-teal-50">
+    <div className="relative overflow-hidden border-b-8 bg-gradient-to-t from-teal-800 to-teal-900 border-x-8 border-teal-50">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-teal-100 text-balance sm:text-5xl">

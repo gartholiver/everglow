@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Button } from "../../components";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import DialogButton from "../../components/Button/DialogButton";
+import { DialogButton } from "../../components/Button";
+import { Element } from "react-scroll";
 
 export default function Services() {
   return (
-    <section className="relative w-full py-24 overflow-hidden border-t-8 bg-teal-50 border-x-8 border-teal-50">
-      <div className="absolute top-0 left-0 transform rotate-45 -translate-x-48 -translate-y-48 scale-[3.5] bg-stone-600 size-96"></div>
+    <Element id="services" className="relative w-full py-24 overflow-hidden border-t-8 bg-teal-50 border-x-8 border-teal-50">
+      <div className="absolute top-0 left-0 transform rotate-45 -translate-x-48 -translate-y-48 scale-[3.5] 2xl:scale-[4] bg-stone-600 size-96"></div>
       <div className="absolute bottom-0 left-0 w-full h-32 bg-teal-900 md:h-48"></div>
 
       <div className="relative z-10 max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8">
@@ -138,6 +139,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }

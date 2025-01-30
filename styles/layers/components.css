@@ -1,7 +1,3 @@
-/**
- * Components Layer Customizations
- */
-
 @layer components {
   .button {
     @apply w-fit rounded-full;
@@ -42,6 +38,18 @@
       &.is-light {
         @apply text-stone-600 bg-white;
       }
+    }
+  }
+
+  .menu-link {
+    @apply font-semibold cursor-pointer text-sm/6 transition duration-300;
+    @apply relative block after:bg-teal-800 after:transition-all;
+    @apply after:content-normal after:w-0 after:h-0.5 after:absolute;
+    @apply after:-bottom-0.5 after:left-0 after:right-0 after:mx-auto after:block;
+    @apply after:duration-200 after:hidden lg:after:block;
+
+    &.is-active {
+      @apply after:w-1/2;
     }
   }
 }
