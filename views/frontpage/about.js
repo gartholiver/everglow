@@ -22,6 +22,7 @@ export default function About() {
                 <Button
                   className="is-light is-primary shadow-primary-light"
                   isLink={true}
+                  useRouter={false}
                   data={{
                     url: 'https://www.google.com/maps/dir//4494+Dixie+Highway,+Suite+2,Waterford+Township,Michigan,48329/@42.7995019,-83.7305383,15z?hl=en&entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D',
                     target: '_blank',

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Button({ children, data, isLink, ...props }) {
   const content = (
     <span className="relative z-10 flex items-center justify-between gap-2 whitespace-nowrap">
@@ -10,14 +8,14 @@ export default function Button({ children, data, isLink, ...props }) {
   return (
     <div className="button">
       {isLink === true ? (
-        <Link
+        <a
           href={data.url}
           target={data.target ?? '_self'}
           title={data.title}
           {...props}
         >
           {content}
-        </Link>
+        </a>
       ) : (
         <button {...props}>{content}</button>
       )}
