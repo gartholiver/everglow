@@ -1,5 +1,5 @@
 import { CalendarDaysIcon, ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/solid";
-import { Button } from "../../components";
+import { Button, DialogButton } from "../../components";
 
 export default function Contact() {
   return (
@@ -7,39 +7,32 @@ export default function Contact() {
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-teal-100 text-balance sm:text-5xl">
-            Boost your productivity. Start using our app today.
+            Get In Touch
           </h2>
           <p className="max-w-xl mx-auto mt-6 text-teal-50 text-pretty text-lg/8">
-            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
-            commodo do ea.
+            Have questions? I'm more than happy to provide clarity as to what I do and how I do it! You can call or text me at (248) 929-5656. Otherwise, feel free to schedule one or more of my services. I look forward to meeting you!
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6">
-          <div className="flex flex-wrap items-center gap-4 mt-2">
-              <Button
-                data={{
-                  title: 'Contact Me',
-                  url: '#fpo',
-                  target: '_self'
-                }}
-                isLink={true}
+            <div className="flex flex-wrap items-center gap-4 mt-2">
+              <DialogButton
+                frame="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mwTFsb/I3ZVXnQPPmFxQTbfr9lKuZXXMeRd46L4eTxgKOwdaOWogwes7t2kXT9ybXf5BgMxro1JPKUyMsrO3i024aGa1obS4fyL++k1QqKbgk5mwG/r0fhV41zE1FinChL5BKjxCgor4XgveVvJTQqG+FoaPTugy+RTe7kwhRtw0cY7agP75skihVVg/CPYW11xDc+pOqUSTOiZjEiG8HBHL07OMOzGGoAPyxEcZ/AiRjbZ00uF9hg1CrLOJ9Gacl48uFIg/LcV9oj8C38rP9SVVAiGwVnF8PpC+zZtMMIju2btLwsQ2lQGUQ8cJOQXu5OurD1qfzBQuq9QvBUrKnOQu3nnF3p4mbWpHUKqjMjnWqxd38tnoJwRXOGB/3Pcs6h+OchetGKdnmgGSTQMBuLRQ=="
                 className="is-secondary is-dark shadow-primary-dark"
               >
-                Contact Me
-                <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-auto"/>
-              </Button>
-
-              <Button
-                data={{
-                  title: 'Learn More',
-                  url: '#fpo',
-                  target: '_self'
-                }}
-                isLink={true}
-                className="is-primary is-light shadow-primary-light"
-              >
-                Book An Appointment
+                Book Now
                 <CalendarDaysIcon className="w-5 h-auto" />
-              </Button>
+              </DialogButton>
+
+              <div className="flex items-center gap-2 text-white">
+                Call or Text
+
+                <a
+                  href="tel:2489295656"
+                  target="_blank"
+                  className="italic underline transition-all duration-200 underline-offset-8 decoration-teal-50 hover:decoration-teal-200"
+                >
+                  (248) 929-5656
+                </a>
+              </div>
             </div>
           </div>
         </div>

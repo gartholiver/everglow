@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { Element } from 'react-scroll';
+import { Button, DialogButton } from '../../components';
+import { MapPinIcon } from '@heroicons/react/24/outline';
 
 export default function About() {
   return (
@@ -8,20 +10,27 @@ export default function About() {
         <div className="max-w-2xl px-6 py-12 mx-auto lg:py-24 lg:max-w-7xl lg:px-8">
           <div className="flex flex-col lg:flex-row lg:gap-x-8 lg:gap-y-16">
             <div className="lg:pr-8">
-              <p className="font-semibold text-teal-50 text-base/7">About us</p>
-              <h2 className="mt-2 text-4xl font-semibold tracking-tight text-teal-100 text-pretty sm:text-5xl">Our mission</h2>
+              <p className="font-semibold text-teal-50 text-base/7">About</p>
+              <h2 className="mt-2 text-4xl font-semibold tracking-tight text-teal-100 text-pretty sm:text-5xl">My Mission</h2>
               <div className='mt-6 text-teal-50 text-base/7'>
                 <p className="mb-6">
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                  vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                  erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                  sed amet vitae sed turpis id.
+                  Everglow was envisioned as an environment that is kind, caring, and professional. I strive to provide the best services with professionalism and integrity. Licensed Esthetician since 2013 and state-licensed educator since 2016. My specialties are Speed-waxing, Brazilian Waxes, Lash enhancement Services, Luxurious Touch Facial Treatments, and Custom Airbrush Tanning.
                 </p>
-                <p>
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                  fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                  adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                <p className='mb-8'>
+                  I am located inside "Northern Roots Hair Studio and Beauty Spa" at the intersection of Dixie Highway and Frembes. Once inside, proceed to the back of the building to Suite 2 on the right. Feel free to call or text the business number for additional instructions! Parking is located in the rear of the build accessible from Frembes.
                 </p>
+                <Button
+                  className="is-light is-primary shadow-primary-light"
+                  isLink={true}
+                  data={{
+                    url: 'https://www.google.com/maps/dir//4494+Dixie+Highway,+Suite+2,Waterford+Township,Michigan,48329/@42.7995019,-83.7305383,15z?hl=en&entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D',
+                    target: '_blank',
+                    title: 'Get Direction'
+                  }}
+                >
+                  Get Direction
+                  <MapPinIcon className="w-5 h-auto" />
+                </Button>
               </div>
             </div>
             <div className="pt-16 lg:row-span-2">

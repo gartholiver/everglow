@@ -10,7 +10,7 @@ const navigation = {
   social: [
     {
       name: 'Facebook',
-      href: '#',
+      href: 'https://www.facebook.com/EverGlow.Esthetics.MI/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -23,7 +23,7 @@ const navigation = {
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://www.instagram.com/everglow_esthetic/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -35,40 +35,18 @@ const navigation = {
       ),
     },
     {
-      name: 'X',
-      href: '#',
+      name: 'Vagaro',
+      href: 'https://www.vagaro.com/everglowesthetics',
       icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+        <svg viewBox="0 0 234.000000 213.000000" preserveAspectRatio="xMidYMid meet" {...props}>
+          <metadata>Online Scheduling for Salons and Spas. Salon Software | Salon Appointment Software" title="Online Scheduling for Salons and Spas. Salon Software | Salon Appointment Software</metadata>
+          <g transform="translate(0.000000,213.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+            <path d="M283 2116 c-189 -61 -310 -260 -274 -452 6 -37 23 -89 37 -116 14 -28 199 -350 410 -717 258 -447 399 -680 427 -709 84 -87 226 -132 349 -112 82 13 172 58 225 112 28 29 170 265 428 713 213 368 397 690 410 716 101 198 11 451 -193 547 -51 24 -69 27 -167 27 -103 0 -114 -2 -177 -32 -38 -18 -86 -51 -111 -76 -28 -29 -119 -176 -258 -416 -117 -204 -216 -371 -219 -371 -3 0 -75 120 -160 268 -311 539 -311 540 -430 596 -56 26 -78 31 -160 33 -60 2 -110 -2 -137 -11z m232 -150 c28 -13 62 -36 77 -52 21 -22 483 -808 491 -834 1 -4 -61 -116 -139 -251 -77 -134 -144 -253 -148 -263 -8 -24 32 -89 -331 539 -159 275 -298 525 -308 555 -16 47 -17 63 -8 109 35 176 211 270 366 197z m1504 9 c125 -44 200 -179 168 -301 -17 -64 -788 -1404 -836 -1452 -19 -19 -52 -43 -75 -53 -55 -25 -157 -25 -212 0 -49 22 -106 79 -130 129 -22 47 -30 139 -15 185 16 48 782 1374 822 1421 63 75 181 106 278 71z"></path>
+            <path d="M1141 537 c-91 -31 -104 -162 -21 -210 85 -51 190 17 177 115 -10 77 -82 120 -156 95z"></path>
+          </g>
         </svg>
       ),
-    },
-    {
-      name: 'GitHub',
-      href: '#',
-      icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
-    {
-      name: 'YouTube',
-      href: '#',
-      icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
+    }
   ],
 }
 
@@ -93,13 +71,13 @@ export default function Footer({ title, menuItems }) {
         </nav>
         <div className="flex justify-center mt-16 gap-x-10">
           {navigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-600 hover:text-gray-800">
+            <a key={item.name} href={item.href} target="_blank" className="text-gray-600 hover:text-gray-800">
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="size-6" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-gray-600 text-sm/6">&copy; 2024 Your Company, Inc. All rights reserved.</p>
+        <p className="mt-10 text-center text-gray-600 text-sm/6">&copy; {year} Everglow Esthetics, LLC. All rights reserved.</p>
       </div>
     </footer>
 

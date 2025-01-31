@@ -13,7 +13,7 @@ export default function Services() {
       <div className="relative z-10 max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8">
         <h2 className="font-semibold text-teal-50 text-base/7">My Services</h2>
         <p className="max-w-lg mt-2 text-4xl font-semibold tracking-tight text-teal-100 text-pretty sm:text-5xl">
-          Everything you need to truely glow up and show out.
+          Enhancing Your Natural Beauty, One Treatment at a Time
         </p>
         <div className="grid grid-cols-1 gap-4 mt-10 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <div className="flex p-px lg:col-span-4">
@@ -27,15 +27,14 @@ export default function Services() {
               />
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Waxing</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Get smooth from head to toe</p>
+                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Smooth, Flawless Skin, Effortlessly</p>
                 <p className="max-w-lg mt-2 text-stone-600 text-sm/6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus
-                  egestas sem pellentesque.
+                  Experience gentle, expert waxing for silky-smooth skin. From brows to Brazilians, I ensure precision, comfort, and long-lasting results. Glow with confidence!
                 </p>
                 <div className="mt-6">
                   <DialogButton
                     className="is-dark is-primary shadow-secondary-light"
-                    frame="https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mw/P269iYkjnJcUKy1e/SonNsoD8V8sj7U/iHm6jOQy0xffUhvGKOL+75HaMCXUD3SS3ch2I56XANCXTXivOarRHIJmN3qPSw6HEeVZBAJH8mUE2+CFGGD4sarciQztL6F8Gt/fP35QouH/gtHiB6X7S7Fk/RMQ76Li+eEYe3/Cc4Re3rBW0muWSkwKKvGsukFNPp0phlXB+tdoaJBNWoVZxT/R0aiwEPjlD1soQCIphq2V1RJVXCUSyjsXk5Vvdpxk6Tnd8VdrcgIZ7GcsTRPIYqRdFH96kwTwMX8bITvndRUTURApspqTwNJ+cLO8cjbKZo181QCK6IboGKO1NXRVe7fg2m/xARSFMLXP78QUno="
+                    frame="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mwTFsb/I3ZVXnQPPmFxQTbfr9lKuZXXMeRd46L4eTxgKOwdaOWogwes7t2kXT9ybXf5BgMxro1JPKUyMsrO3i024aGa1obS4fyL++k1QqKbgk5mwG/r0fhV41zE1FinChL5BKjxCgor4XgveVvJTQqG+FoaPTugy+RTe7kwhRtw0cY7agP75skihVVg/CPYW11xDc+pOqUSTOiZjEiG8HBHL07OMOzGGoAPyxEcZ/AiRjbZ00uF9hg1CrLOJ9Gacl48uFIg/LcV9oj8C38rP9SVVAiGwVnF8PpC+zZtMMIju2btLwsQ2lQGUQ8cJOQXu5OurD1qfzBQuq9QvBUrKnOQnMisTFctN14rC73gciJ+WEYXcGum+x/wcYi7sOKOKIFSoexXm6x0WDFhMmuaUJm1g=="
                   >
                     Learn More
                     <SparklesIcon className="w-5 h-auto" />
@@ -55,23 +54,18 @@ export default function Services() {
               />
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Lashes & Brows</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Shape dat shit up</p>
+                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Perfectly Framed, Effortlessly Beautiful</p>
                 <p className="max-w-lg mt-2 text-stone-600 text-sm/6">
-                  Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa.
+                  Elevate your natural beauty with expert brow shaping and lash treatments. From precise waxing to lifting and tinting, we create a look you'll love!
                 </p>
                 <div className="mt-6">
-                  <Button
-                    isLink={true}
+                  <DialogButton
                     className="is-dark is-secondary shadow-primary-light"
-                    data={{
-                      title: 'Learn More',
-                      url: '#fpo',
-                      target: '_self'
-                    }}
+                    frame="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mwTFsb/I3ZVXnQPPmFxQTbfr9lKuZXXMeRd46L4eTxgKOwdaOWogwes7t2kXT9ybXf5BgMxro1JPKUyMsrO3i024aGa1obS4fyL++k1QqKbgk5mwG/r0fhV41zE1FinChL5BKjxCgor4XgveVvJTQqG+FoaPTugy+RTe7kwhRtw0cY7agP75skihVVg/CPYW11xDc+pOqUSTOiZjEiG8HBHL07OMOzGGoAPyxEcZ/AiRjbZ00uF9hg1CrLOJ9Gacl48uFIg/LcV9oj8C38rP9SVVAiGwVnF8PpC+zZtMMIju2btLwsQ2lQGUQ8cJOQXu5OurD1qfzBQuq9QvBUrKnOQtyw/o2ICbFWjzr+TynGXZmsXhTTpooZoHZRua8Qy2a3maRDLWLbPWi8I6O1brxsTQ=="
                   >
                     Learn More
                     <SparklesIcon className="w-5 h-auto" />
-                  </Button>
+                  </DialogButton>
                 </div>
               </div>
             </div>
@@ -85,23 +79,18 @@ export default function Services() {
               />
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Spray Tanning</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Be less pale</p>
+                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Sun-Kissed Glow, No Sun Required</p>
                 <p className="max-w-lg mt-2 text-stone-600 text-sm/6">
-                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
+                  Get a Impeccable, natural-looking tan with our custom spray tanning. Streak-free, long-lasting, and perfectly tailored to your skin tone for a radiant glow!
                 </p>
                 <div className="mt-6">
-                  <Button
-                    isLink={true}
+                  <DialogButton
                     className="is-dark is-secondary shadow-primary-light"
-                    data={{
-                      title: 'Learn More',
-                      url: '#fpo',
-                      target: '_self'
-                    }}
+                    frame="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mwTFsb/I3ZVXnQPPmFxQTbfr9lKuZXXMeRd46L4eTxgKOwdaOWogwes7t2kXT9ybXf5BgMxro1JPKUyMsrO3i024aGa1obS4fyL++k1QqKbgk5mwG/r0fhV41zE1FinChL5BKjxCgor4XgveVvJTQqG+FoaPTugy+RTe7kwhRtw0cY7agP75skihVVg/CPYW11xDc+pOqUSTOiZjEiG8HBHL07OMOzGGoAPyxEcZ/AiRjbZ00uF9hg1CrLOJ9Gacl48uFIg/LcV9oj8C38rP9SVVAiGwVnF8PpC+zZtMMIju2btLwsQ2lQGUQ8cJOQXu5OurD1qfzBQuq9QvBUrKnOQha1Cs/Qa/gScWbzOUb4AwTl1prpWHlbIRflFuzQ5DR4hRDN4YIiW0/QC3jOaqx3Tw=="
                   >
                     Learn More
                     <SparklesIcon className="w-5 h-auto" />
-                  </Button>
+                  </DialogButton>
                 </div>
               </div>
             </div>
@@ -115,24 +104,18 @@ export default function Services() {
               />
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Facials</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">It feels great</p>
+                <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Nourish, Rejuvenate, Glow</p>
                 <p className="max-w-lg mt-2 text-stone-600 text-sm/6">
-                  Sed congue eros non finibus molestie. Vestibulum euismod augue vel commodo vulputate. Maecenas at
-                  augue sed elit dictum vulputate.
+                  Indulge in expert facial treatments designed to refresh and restore your skin. From deep hydration to targeted treatments, we’ll reveal your most radiant glow!
                 </p>
                 <div className="mt-6">
-                  <Button
-                    isLink={true}
+                  <DialogButton
                     className="is-dark is-primary shadow-secondary-light"
-                    data={{
-                      title: 'Learn More',
-                      url: '#fpo',
-                      target: '_self'
-                    }}
+                    frame="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVJHQ4Xb0RrDOY3PfsdJZlXWRdAIBxQ1c4U/Yro8671mwTFsb/I3ZVXnQPPmFxQTbfr9lKuZXXMeRd46L4eTxgKOwdaOWogwes7t2kXT9ybXf5BgMxro1JPKUyMsrO3i024aGa1obS4fyL++k1QqKbgk5mwG/r0fhV41zE1FinChL5BKjxCgor4XgveVvJTQqG+FoaPTugy+RTe7kwhRtw0cY7agP75skihVVg/CPYW11xDc+pOqUSTOiZjEiG8HBHL07OMOzGGoAPyxEcZ/AiRjbZ00uF9hg1CrLOJ9Gacl48uFIg/LcV9oj8C38rP9SVVAiGwVnF8PpC+zZtMMIju2btLwsQ2lQGUQ8cJOQXu5OurD1qfzBQuq9QvBUrKnOQqUWYQJHxNWU4X3sN91IRAIuMI+tKpAw3Xf9X85/bDC8L+M1nM1MmYriH8fZMXJAyQ=="
                   >
                     Learn More
                     <SparklesIcon className="w-5 h-auto" />
-                  </Button>
+                  </DialogButton>
                 </div>
               </div>
             </div>
