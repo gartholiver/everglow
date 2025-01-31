@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button, DialogButton } from "../../components/";
-import { ChatBubbleOvalLeftEllipsisIcon, CalendarDaysIcon } from "@heroicons/react/24/solid";
+import { DialogButton } from "../../components/";
+import { CalendarDaysIcon } from "@heroicons/react/24/solid";
 
 function imageOne(node) {
   return (
