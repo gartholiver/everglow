@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import { Element } from 'react-scroll';
-import { Button, DialogButton } from '../../components';
+import { Button } from '../../components';
 import { MapPinIcon } from '@heroicons/react/24/outline';
+import { useContext } from 'react';
+import { SiteContext } from '../contexts';
 
 export default function About() {
+  const { sitePath: path } = useContext(SiteContext);
+
   return (
-    <Element id="about">
+    <>
+      <Element id="about"></Element>
       <section className="relative top-0 w-full border-b-8 bg-gradient-to-t from-teal-800 to-teal-900 border-x-8 md:sticky border-teal-50">
         <div className="max-w-2xl px-6 py-12 mx-auto lg:py-24 lg:max-w-7xl lg:px-8">
           <div className="flex flex-col lg:flex-row lg:gap-x-8 lg:gap-y-16">
@@ -35,40 +40,50 @@ export default function About() {
               </div>
             </div>
             <div className="pt-16 lg:row-span-2">
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-2 lg:gap-4 xl:gap-6">
-                <div className="overflow-hidden rounded-full shadow-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
-                    className="block object-cover size-full"
-                  />
+              {typeof path === 'string' && (
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-2 lg:gap-4 xl:gap-6">
+                  <div className="overflow-hidden rounded-full shadow-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10">
+                    <Image
+                      alt="Megan Messer"
+                      height={600}
+                      width={600}
+                      src={`${path}/wp-content/uploads/2025/01/Facetune_12-07-2023-16-03-33-scaled.webp`}
+                      className="block object-cover size-full"
+                    />
+                  </div>
+                  <div className="-mt-8 overflow-hidden shadow-xl rounded-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+                    <Image
+                      alt="Female Facial"
+                      height={600}
+                      width={600}
+                      src={`${path}/wp-content/uploads/2025/01/dominique-rivas-rWwuf8yKw4Y-unsplash-scaled.webp`}
+                      className="block object-cover size-full"
+                    />
+                  </div>
+                  <div className="overflow-hidden shadow-xl rounded-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10">
+                    <Image
+                      alt="Essential Oil"
+                      height={600}
+                      width={600}
+                      src={`${path}/wp-content/uploads/2025/01/christin-hume-0MoF-Fe0w0A-unsplash-scaled.webp`}
+                      className="block object-cover size-full"
+                    />
+                  </div>
+                  <div className="-mt-8 overflow-hidden rounded-full shadow-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+                    <Image
+                      alt="Male Facial"
+                      height={600}
+                      width={600}
+                      src={`${path}/wp-content/uploads/2025/01/IMG_9033.webp`}
+                      className="block object-cover size-full"
+                    />
+                  </div>
                 </div>
-                <div className="-mt-8 overflow-hidden shadow-xl rounded-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
-                    className="block object-cover size-full"
-                  />
-                </div>
-                <div className="overflow-hidden shadow-xl rounded-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
-                    className="block object-cover size-full"
-                  />
-                </div>
-                <div className="-mt-8 overflow-hidden rounded-full shadow-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
-                    className="block object-cover size-full"
-                  />
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
       </section>
-    </Element>
+    </>
   );
 }

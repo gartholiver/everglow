@@ -1,4 +1,4 @@
-export default function Button({ children, data, isLink, ...props }) {
+export default function Button({ children, data, isLink, className }) {
   const content = (
     <span className="relative z-10 flex items-center justify-between gap-2 whitespace-nowrap">
       {children}
@@ -12,12 +12,12 @@ export default function Button({ children, data, isLink, ...props }) {
           href={data.url}
           target={data.target ?? '_self'}
           title={data.title}
-          {...props}
+          className={className}
         >
           {content}
         </a>
       ) : (
-        <button {...props}>{content}</button>
+        <button className={className}>{content}</button>
       )}
     </div>
   )

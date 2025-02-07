@@ -10,20 +10,31 @@ import {
   SEO,
 } from '../components';
 import FrontPage from '../views/frontpage';
+import { SiteContext } from '../views/contexts';
 
 export default function Component() {
   const { data } = useQuery(Component.query, {
     variables: Component.variables(),
   });
 
-  const { title: siteTitle, description: siteDescription } =
-    data?.generalSettings;
+  const {
+    title: siteTitle,
+    description: siteDescription
+  } = data?.generalSettings;
+
+  const {
+    generalSettingsUrl: sitePath
+  } = data?.allSettings;
+
   const primaryMenu = data?.headerMenuItems?.nodes ?? [];
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
-  const page = data?.pageBy?.homeFields ?? {};
 
   return (
-    <>
+    <SiteContext.Provider
+      value={{
+        sitePath
+      }}
+    >
       <SEO title={siteTitle} description={siteDescription} />
       <Header
         title={siteTitle}
@@ -32,11 +43,11 @@ export default function Component() {
       />
       <Main>
         <Container>
-          <FrontPage {...page} />
+          <FrontPage />
         </Container>
       </Main>
       <Footer title={siteTitle} menuItems={footerMenu} />
-    </>
+    </SiteContext.Provider>
   );
 }
 
@@ -50,6 +61,9 @@ Component.query = gql`
     generalSettings {
       ...BlogInfoFragment
     }
+    allSettings {
+      generalSettingsUrl
+    }
     headerMenuItems: menuItems(where: { location: $headerLocation }) {
       nodes {
         ...NavigationMenuItemFragment
@@ -58,44 +72,6 @@ Component.query = gql`
     footerMenuItems: menuItems(where: { location: $footerLocation }) {
       nodes {
         ...NavigationMenuItemFragment
-      }
-    }
-    pageBy(pageId: 2) {
-      homeFields {
-        banner {
-          heading
-          subheading
-          buttonOne {
-            target
-            title
-            url
-          }
-          buttonTwo {
-            target
-            title
-            url
-          }
-          imageOne {
-            node {
-              altText
-              sourceUrl
-              mediaDetails {
-                width
-                height
-              }
-            }
-          }
-          imageTwo {
-            node {
-              altText
-              sourceUrl
-              mediaDetails {
-                height
-                width
-              }
-            }
-          }
-        }
       }
     }
   }

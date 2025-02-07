@@ -1,10 +1,13 @@
 import Image from "next/image";
-import { Button } from "../../components";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { DialogButton } from "../../components/Button";
 import { Element } from "react-scroll";
+import { useContext } from "react";
+import { SiteContext } from "../contexts";
 
 export default function Services() {
+  const { sitePath: path } = useContext(SiteContext);
+
   return (
     <Element id="services" className="relative w-full py-24 overflow-hidden border-t-8 bg-teal-50 border-x-8 border-teal-50">
       <div className="absolute top-0 left-0 transform rotate-45 -translate-x-48 -translate-y-48 scale-[3.5] 2xl:scale-[4] bg-stone-600 size-96"></div>
@@ -18,13 +21,15 @@ export default function Services() {
         <div className="grid grid-cols-1 gap-4 mt-10 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <div className="flex p-px lg:col-span-4">
             <div className="overflow-hidden rounded-lg bg-white w-full ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
-              <Image
-                alt="waxing"
-                src="http://localhost:8882/wp-content/uploads/2025/01/laser-epilation-hair-removal-therapy-1.webp"
-                className="object-cover object-left w-full h-80"
-                width="1200"
-                height="768"
-              />
+              {typeof path === 'string' && (
+                <Image
+                  alt="waxing"
+                  src={`${path}/wp-content/uploads/2025/01/laser-epilation-hair-removal-therapy-1.webp`}
+                  className="object-cover object-left w-full h-80"
+                  width="1200"
+                  height="768"
+                />
+              )}
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Waxing</h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Smooth, Flawless Skin, Effortlessly</p>
@@ -45,13 +50,15 @@ export default function Services() {
           </div>
           <div className="flex p-px lg:col-span-2">
             <div className="overflow-hidden w-full rounded-lg bg-white ring-1 ring-white/15 lg:rounded-tr-[2rem]">
-              <Image
-                alt="lashes/brows"
-                src="http://localhost:8882/wp-content/uploads/2025/01/fleur-kaan-w4Dj3MshHQ0-unsplash-scaled.webp"
-                className="object-cover w-full h-80"
-                width="500"
-                height="500"
-              />
+              {typeof path === 'string' && (
+                <Image
+                  alt="lashes/brows"
+                  src={`${path}/wp-content/uploads/2025/01/fleur-kaan-w4Dj3MshHQ0-unsplash-scaled.webp`}
+                  className="object-cover w-full h-80"
+                  width="500"
+                  height="500"
+                />
+              )}
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Lashes & Brows</h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Perfectly Framed, Effortlessly Beautiful</p>
@@ -72,11 +79,15 @@ export default function Services() {
           </div>
           <div className="flex p-px lg:col-span-2">
             <div className="overflow-hidden w-full rounded-lg bg-white ring-1 ring-white/15 lg:rounded-bl-[2rem]">
-              <img
-                alt=""
-                src="http://localhost:8882/wp-content/uploads/2025/01/sharon-pittaway-4_hFxTsmaO4-unsplash-scaled.webp"
-                className="object-cover w-full h-80"
-              />
+              {typeof path === 'string' && (
+                <Image
+                  alt="spray tanning"
+                  width="500"
+                  height="500"
+                  src={`${path}/wp-content/uploads/2025/01/sharon-pittaway-4_hFxTsmaO4-unsplash-scaled.webp`}
+                  className="object-cover w-full h-80"
+                />
+              )}
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Spray Tanning</h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Sun-Kissed Glow, No Sun Required</p>
@@ -97,11 +108,15 @@ export default function Services() {
           </div>
           <div className="flex p-px lg:col-span-4">
             <div className="overflow-hidden w-full rounded-lg bg-white ring-1 ring-white/15 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]">
-              <img
-                alt=""
-                src="http://localhost:8882/wp-content/uploads/2025/01/dominique-rivas-tVgjf-Jd-IU-unsplash.webp"
-                className="object-cover w-full h-80"
-              />
+              {typeof path === 'string' && (
+                <Image
+                  alt="facials"
+                  width="1200"
+                  height="768"
+                  src={`${path}/wp-content/uploads/2025/01/dominique-rivas-tVgjf-Jd-IU-unsplash.webp`}
+                  className="object-cover w-full h-80"
+                />
+              )}
               <div className="p-10">
                 <h3 className="font-semibold text-amber-950 text-sm/4">Facials</h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-teal-900">Nourish, Rejuvenate, Glow</p>

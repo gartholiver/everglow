@@ -4,10 +4,10 @@ import Contact from "./contact";
 import Reviews from "./reviews";
 import Services from "./services";
 
-export default function FrontPage({ banner }) {
+export default function FrontPage() {
   return (
     <>
-      <Banner banner={banner} />
+      <Banner />
       <Services />
       <About />
       <Reviews />
