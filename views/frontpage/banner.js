@@ -36,7 +36,7 @@ export default function Banner() {
   const { sitePath: path } = useContext(SiteContext);
 
   return (
-    <section className="relative md:sticky top-0 flex justify-center w-full py-24 bg-gradient-to-t md:bg-gradient-to-r from-teal-800 via-teal-900 to-teal-900 md:py-0 md:h-screen md:min-h-[48rem] item-center border-8 border-white">
+    <section className="relative md:sticky top-0 flex justify-center w-full py-24 bg-gradient-to-t md:bg-gradient-to-r from-teal-800 via-teal-900 to-teal-900 md:py-0 md:h-screen md:min-h-[48rem] item-center border-8 border-white z-10">
       <div className="absolute top-0 right-0 w-full h-1/3 md:h-full md:w-1/3 bg-stone-600"></div>
 
       <div className="container flex flex-col items-center justify-center gap-20 text-white md:gap-12 xl:gap-24 md:flex-row">

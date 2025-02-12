@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { DialogButton } from "../../components/Button";
-import { Element } from "react-scroll";
 import { useContext } from "react";
 import { SiteContext } from "../contexts";
 
@@ -9,7 +8,7 @@ export default function Services() {
   const { sitePath: path } = useContext(SiteContext);
 
   return (
-    <Element id="services" className="relative w-full py-24 overflow-hidden border-t-8 bg-teal-50 border-x-8 border-teal-50">
+    <section id="services" className="relative z-10 w-full py-24 overflow-hidden border-t-8 bg-teal-50 border-x-8 border-teal-50">
       <div className="absolute top-0 left-0 transform rotate-45 -translate-x-48 -translate-y-48 scale-[3.5] 2xl:scale-[4] bg-stone-600 size-96"></div>
       <div className="absolute bottom-0 left-0 w-full h-32 bg-teal-900 md:h-48"></div>
 
@@ -137,6 +136,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </Element>
+    </section>
   )
 }

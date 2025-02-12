@@ -54,7 +54,7 @@ export default function Footer({ title, menuItems }) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-teal-50">
+    <footer className="relative z-10 bg-teal-50">
       <div className="px-6 py-20 mx-auto overflow-hidden max-w-7xl sm:py-24 lg:px-8">
         <nav aria-label="Footer" className="flex flex-wrap justify-center -mb-6 gap-x-12 gap-y-3 text-sm/6">
           {navigation.main.map((item) => (
