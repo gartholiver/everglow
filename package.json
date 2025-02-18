@@ -13,6 +13,7 @@
     "@apollo/client": "^3.10.4",
     "@faustwp/cli": "^3.1.1",
     "@faustwp/core": "^3.1.0",
+    "@googlemaps/js-api-loader": "^1.16.8",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@wordpress/base-styles": "^5.10.0",
@@ -24,6 +25,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0",
+    "react-scroll-parallax": "^3.4.5",
     "sass": "^1.77.3",
     "sharp": "^0.33.5",
     "swiper": "^11.2.1"

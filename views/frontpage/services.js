@@ -3,6 +3,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import { DialogButton } from "../../components/Button";
 import { useContext } from "react";
 import { SiteContext } from "../contexts";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export default function Services() {
   const { sitePath: path } = useContext(SiteContext);
@@ -21,12 +22,12 @@ export default function Services() {
           <div className="flex p-px lg:col-span-4">
             <div className="overflow-hidden rounded-lg bg-white w-full ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
               {typeof path === 'string' && (
-                <Image
-                  alt="waxing"
-                  src={`${path}/wp-content/uploads/2025/01/laser-epilation-hair-removal-therapy-1.webp`}
+                <ParallaxBanner
+                  layers={[{
+                    image: `${path}/wp-content/uploads/2025/01/laser-epilation-hair-removal-therapy-1.webp`,
+                    speed: -5
+                  }]}
                   className="object-cover object-left w-full h-80"
-                  width="1200"
-                  height="768"
                 />
               )}
               <div className="p-10">
@@ -50,12 +51,12 @@ export default function Services() {
           <div className="flex p-px lg:col-span-2">
             <div className="overflow-hidden w-full rounded-lg bg-white ring-1 ring-white/15 lg:rounded-tr-[2rem]">
               {typeof path === 'string' && (
-                <Image
-                  alt="lashes/brows"
-                  src={`${path}/wp-content/uploads/2025/01/fleur-kaan-w4Dj3MshHQ0-unsplash-scaled.webp`}
+                <ParallaxBanner
+                  layers={[{
+                    image: `${path}/wp-content/uploads/2025/01/fleur-kaan-w4Dj3MshHQ0-unsplash-scaled.webp`,
+                    speed: -5
+                  }]}
                   className="object-cover w-full h-80"
-                  width="500"
-                  height="500"
                 />
               )}
               <div className="p-10">
@@ -79,11 +80,11 @@ export default function Services() {
           <div className="flex p-px lg:col-span-2">
             <div className="overflow-hidden w-full rounded-lg bg-white ring-1 ring-white/15 lg:rounded-bl-[2rem]">
               {typeof path === 'string' && (
-                <Image
-                  alt="spray tanning"
-                  width="500"
-                  height="500"
-                  src={`${path}/wp-content/uploads/2025/01/sharon-pittaway-4_hFxTsmaO4-unsplash-scaled.webp`}
+                <ParallaxBanner
+                  layers={[{
+                    image: `${path}/wp-content/uploads/2025/01/sharon-pittaway-4_hFxTsmaO4-unsplash-scaled.webp`,
+                    speed: -5
+                  }]}
                   className="object-cover w-full h-80"
                 />
               )}
@@ -108,11 +109,11 @@ export default function Services() {
           <div className="flex p-px lg:col-span-4">
             <div className="overflow-hidden w-full rounded-lg bg-white ring-1 ring-white/15 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]">
               {typeof path === 'string' && (
-                <Image
-                  alt="facials"
-                  width="1200"
-                  height="768"
-                  src={`${path}/wp-content/uploads/2025/01/dominique-rivas-tVgjf-Jd-IU-unsplash.webp`}
+                <ParallaxBanner
+                  layers={[{
+                    image: `${path}/wp-content/uploads/2025/01/dominique-rivas-tVgjf-Jd-IU-unsplash.webp`,
+                    speed: -5
+                  }]}
                   className="object-cover w-full h-80"
                 />
               )}

@@ -3,6 +3,7 @@ import { Button } from '../../components';
 import { MapPinIcon } from '@heroicons/react/24/outline';
 import { useContext } from 'react';
 import { SiteContext } from '../contexts';
+import { Parallax } from 'react-scroll-parallax';
 
 export default function About() {
   const { sitePath: path } = useContext(SiteContext);
@@ -11,7 +12,11 @@ export default function About() {
     <section id="about" className="relative z-10 w-full border-b-8 border-x-8 border-teal-50 bg-gradient-to-t from-teal-800 to-teal-900">
       <div className="relative z-10 max-w-2xl px-6 py-12 mx-auto lg:py-24 xl:py-32 lg:max-w-7xl lg:px-8">
         <div className="flex flex-col lg:flex-row lg:gap-x-8 lg:gap-y-16">
-          <div className="lg:pr-8">
+          <Parallax
+            className="lg:pr-8"
+            speed={-5}
+            translateY={['-50px', '50px']}
+          >
             <p className="font-semibold text-teal-50 text-base/7">About</p>
             <h2 className="mt-2 text-4xl font-semibold tracking-tight text-teal-100 text-pretty sm:text-5xl">My Mission</h2>
             <div className='mt-6 text-teal-50 text-base/7'>
@@ -26,7 +31,7 @@ export default function About() {
                 isLink={true}
                 useRouter={false}
                 data={{
-                  url: 'https://www.google.com/maps/dir//4494+Dixie+Highway,+Suite+2,Waterford+Township,Michigan,48329/@42.7995019,-83.7305383,15z?hl=en&entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D',
+                  url: 'https://maps.app.goo.gl/aeTGQYESgnkJYBd4A',
                   target: '_blank',
                   title: 'Get Direction'
                 }}
@@ -35,8 +40,12 @@ export default function About() {
                 <MapPinIcon className="w-5 h-auto" />
               </Button>
             </div>
-          </div>
-          <div className="pt-16 lg:row-span-2">
+          </Parallax>
+          <Parallax
+            className="pt-16 lg:row-span-2"
+            speed={-5}
+            translateY={['50px', '-50px']}
+          >
             {typeof path === 'string' && (
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-2 lg:gap-4 xl:gap-6">
                 <div className="overflow-hidden rounded-full shadow-xl aspect-square outline outline-1 -outline-offset-1 outline-black/10">
@@ -77,7 +86,7 @@ export default function About() {
                 </div>
               </div>
             )}
-          </div>
+          </Parallax>
         </div>
       </div>
     </section>

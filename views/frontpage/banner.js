@@ -3,6 +3,7 @@ import { DialogButton } from "../../components/";
 import { CalendarDaysIcon } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import { SiteContext } from "../contexts";
+import { Parallax } from "react-scroll-parallax";
 
 function imageOne(node) {
   return (
@@ -40,7 +41,11 @@ export default function Banner() {
       <div className="absolute top-0 right-0 w-full h-1/3 md:h-full md:w-1/3 bg-stone-600"></div>
 
       <div className="container flex flex-col items-center justify-center gap-20 text-white md:gap-12 xl:gap-24 md:flex-row">
-        <div className="flex flex-col order-2 max-w-md gap-6 md:order-1">
+        <Parallax
+          speed={-5}
+          translateY={['-50px', '50px']}
+          className="flex flex-col order-2 max-w-md gap-6 md:order-1"
+        >
           <h1 className="font-semibold tracking-tight text-teal-100 text-3xl/tight sm:text-3xl/tight lg:text-5xl/tight text-balance">
             Radiate&nbsp;Confidence,
             <br/>Glow&nbsp;Effortlessly
@@ -69,12 +74,16 @@ export default function Banner() {
               </a>
             </div>
           </div>
-        </div>
+        </Parallax>
 
-        <div className="relative order-1 w-full max-w-md md:min-w-96 aspect-square md:order-2">
+        <Parallax
+          speed={5}
+          translateY={['50px', '-50px']}
+          className="relative order-1 w-full max-w-md md:min-w-96 aspect-square md:order-2"
+        >
           {typeof path === 'string' && (
-            <>
-              <div className="absolute right-0 z-0 w-2/3 h-full transform scale-105 bg-teal-900 rounded-t-full xl:scale-125 -top-8">
+            <>  
+              <div className="absolute right-0 z-0 w-2/3 h-full transform scale-105 bg-teal-900 rounded-t-full xl:scale-125 -top-8">  
                 <Image
                   src={`${path}/wp-content/uploads/2025/01/drew-dizzy-graham-cTKGZJTMJQU-unsplash-scaled.webp`}
                   alt="Eye peering through plant left."
@@ -97,7 +106,7 @@ export default function Banner() {
 
           {/* {imageOne(banner.imageOne.node)}
           {imageTwo(banner.imageTwo.node)} */}
-        </div>
+        </Parallax>
       </div>
     </section>
   );
